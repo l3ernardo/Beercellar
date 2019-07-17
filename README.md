@@ -1,24 +1,19 @@
-For this challange, I created beer cellar app
-
-From the list of functionalities propose in this challenge.
+This is my Beer cellar app
 
 I created an started list of beers bottles using external API;
 
-* I had blocker where I could not access any of the API listed in the challange description, due to company policy, security FortiClient just blocked the api.
-So I used another called: https://api.punkapi.com/v2/beers/
+For this challange, I used React and CSS with no framework
+The CSS part was mostly copied from small apps I develop, I thought would be faster
 
-I completed Detail view for the bottle list,
+* I had blocker where I could not access any of the API listed in the document description, due to company policy, security FortiClient just blocked the api web sites.
 
-I failed to complete the possibility to add new bottles due to time;
+So I used another api called: https://api.punkapi.com/v2/beers/
 
-I put in place simple search, can search by bottle name or tag;
+The features to this point were, list of beer bottles with simple search option to search bottle name or tag;
+
+*Still working on the possibility to add new bottles, I had some blocker when I started, still need to look into that.
 
 I used the remote api from punkapi to get all the data detail for bottle list.
  
-For this challange, I used React and css with no framework
 
-The CSS part was mostly copied from small apps I develop, I thought would be faster
-
-
-About the app architecture, I build the app using React Context api, I thought would be much faster managing state then using Redux, since this was small app, 
-components end up passing prop through every level of the tree.
+About the app architecture, I build the app using React Context api as point entry data, I thought would be much faster managing state then using Redux, since this was small app, components end up passing prop through every level of the tree.
