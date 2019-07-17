@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import BottleCards from '../layout/Bottlecards'
-import BottleList from '../pages/Bottlelist'
 import { Consumer } from '../../context';
 
 

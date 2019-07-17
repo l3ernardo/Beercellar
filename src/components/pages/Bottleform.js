@@ -1,37 +1,30 @@
-import React, { Component } from 'react'
+import React from 'react'
+import './Page.css'
+
+import Form, {
+	FormThemeProvider,
+	Input,
+	Select,
+	FormButton
+  } from "react-standalone-form";
 
 
+	const Bottleform = () => (
+	<div className="container">
+		<Form fields={["name", "description", "brewer_tips", "food_pairing"]}>
 
- class Bottleform extends Component {
-    render() {
-        return (
-        <div className="container">
-			<h3>Submit your Beer</h3>
-            <form className="">
-				<div className="">
-					<label>Beer Name: </label>
-					<input className="" type="text" name="name" placeholder="" />
-				</div>
-				<div className="">
-					<span className="">Brewers Tips: </span>
-					<textarea className="" name="brewers_tips" placeholder="Your tips..."></textarea>
-				</div>
-				<div className="">
-					<span className="">Tagline: </span>
-					<textarea className="" name="tagline" placeholder="Your tags..."></textarea>
-				</div>
-				<div className="">
-					<span className="">Description: </span>
-					<textarea className="" name="description" placeholder="Your Comment..."></textarea>
-				</div>
-
-				<div className="">
-					<button className="">Submit</button>
-				</div>
-			</form>
-        </div>
-        )
-    }
-}
+		<Input className="input" name="name" label="Beer name" />
+		<Input className="input" name="description" label="Description" />
+		<Input className="input" name="brewer_tips" label="Brewer Tips" />
+		<Select
+		  className="input"
+		  name="food_pairing"
+		  label="Food Pairing"
+		  options={["Grilled Chicken", "Fresh Crab", "Cheese Salad", "Shredded Pork"]}
+		/>
+		<FormButton callback={fields => console.log(fields)}>Save</FormButton>
+	  </Form>
+	  </div>
+	);
 
 export default Bottleform

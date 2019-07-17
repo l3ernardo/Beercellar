@@ -6,12 +6,16 @@ import { Provider } from './context';
 
 import NavBar from './components/layout/Navbar'
 import Home from './components/layout/Home'
-import Contact from './components/pages/Bottleform'
 import Bottleview from './components/pages/Bottleview'
 import Bottleform from  './components/pages/Bottleform'
 
+import Form, {
+	FormThemeProvider,
+  } from "react-standalone-form";
+
 function App() {
   return (
+    <FormThemeProvider>
     <Provider>
       <Router>
         <div className="App">
@@ -24,6 +28,7 @@ function App() {
         </div>
       </Router>
     </Provider>
+  </FormThemeProvider>
   )
 }
 
