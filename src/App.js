@@ -4,10 +4,10 @@ import './App.css';
 
 import { Provider } from './context';
 
-import NavBar from './components/layout/Navbar'
-import Home from './components/layout/Home'
-import Bottleview from './components/pages/Bottleview'
-import Bottleform from  './components/pages/Bottleform'
+import NavBar from './components/Navbar/navbar.component'
+import Home from './components/Home/Home.component'
+import Bottleview from './pages/Bottleview/Bottleview'
+import Bottleform from  './pages/Bottleform/Bottleform'
 
 import Form, {
 	FormThemeProvider,
@@ -18,7 +18,7 @@ function App() {
     <FormThemeProvider>
     <Provider>
       <Router>
-        <div className="App">
+        <div>
         <NavBar />
           <Switch>
             <Route exact path="/" component={Home} />

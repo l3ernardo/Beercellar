@@ -1,0 +1,48 @@
+.bottleview {
+    margin-top:40px;
+    padding-top: 0.1em;
+    background: #EAE9E5;
+    border-bottom: 4px solid #319065;
+}
+
+#bottleview__header
+{
+    width: 1100px;
+    margin-bottom: 2em;
+    padding: 0em 50px;
+}
+
+#bottleview__header h2
+{
+    margin: 0em 0em;
+    font-size: 2.7em;
+    font-weight: 700;
+    color: #454445;
+}
+
+
+.bottleview__box {
+    overflow: hidden;
+    background: #FFF;
+    border-bottom: 2px solid #CFCECD;
+    text-align: left;
+    color: #525252;
+}
+
+.bottleview__box h2 {
+    margin: 1em 0em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #454445;
+}
+
+
+#bottleview__box--tip,
+#bottleview__box--food,
+#bottleview__box--description
+{
+    float: left;
+    width: 300px;
+    padding: 80px 50px 80px 50px;
+}

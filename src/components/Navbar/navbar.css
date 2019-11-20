@@ -1,0 +1,44 @@
+.navbar {
+    height: auto !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    text-align: center;
+    background: #34b091;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 4px solid #319065;
+}
+
+.navbar-nav span {
+    font-family: 'source_sans_proregular';
+    color:white;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 40px;  
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.nav  {
+    margin-right: 40px;
+} 
+
+.navbar-nav ul a  {
+    font-family: 'source_sans_proregular';
+    font-size: 100%;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none; 
+    color:white;
+    float: right;
+}
+
+
+
+.navbar-nav span:hover
+.navbar-nav ul a:hover {
+    color: #888888;
+    background: none;
+}

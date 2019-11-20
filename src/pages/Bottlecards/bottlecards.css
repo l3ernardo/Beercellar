@@ -1,0 +1,38 @@
+
+.bottlelist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.bottle {
+    flex: 1 0 21%;
+    text-align: center ;
+    margin: 5px;
+    height: auto;
+    padding: 30px 20px;
+    background-color: rgb(235, 241, 235);
+
+}
+
+.bottle__cards--img {
+    height: 264px;
+    width: 68px;
+}
+
+.bottle__cards--text {
+    font-size: 12px
+}
+
+.bottle__cards--bottom {
+    width: 100px;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    border-radius: 8px;
+    padding: 10px ;
+    color:white;
+    background-color: rgb(3, 82, 3);
+    font-size: 14px;
+}

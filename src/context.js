@@ -14,8 +14,9 @@ export class Provider extends Component {
     componentDidMount() {
         axios.get(`https://api.punkapi.com/v2/beers`)
         .then(res=> {
+            
+        console.log("res context : ", res.data);  
 
-        console.log("res context : ", res.data);    
             this.setState({bottle_List:res.data});
         })
         .catch(err => console.log(err));
